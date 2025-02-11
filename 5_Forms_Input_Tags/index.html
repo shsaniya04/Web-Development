@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets Learn!!</title>
+</head>
+
+<body>
+    <h1> Application Form </h1>
+    <form action="post">
+        <div>
+            <h5>1. Text:</h5>
+            <label for="username">Enter Your Username:</label>
+            <input type="text" name="Name" id="username" placeholder="username">
+        </div>
+        <div>
+            <h5>2. Radio:</h5>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <h5>3. Checkbox:</h5>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to our Newsletter</label>
+        </div>
+        <div>
+            <h5>4. Textarea:</h5>
+            <label for="comment">Enter Your Comment:</label>
+            <br>
+            <textarea name="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <h5>5. Select:</h5>
+            <select name="fruits">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
