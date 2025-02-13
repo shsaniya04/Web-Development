@@ -1,0 +1,16 @@
+.red {
+    color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+#seconddiv {
+    background-color: aqua;
+    color: rgb(239, 3, 188);
+}
