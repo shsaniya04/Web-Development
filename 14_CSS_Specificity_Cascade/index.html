@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascade</title>
+    <style>
+        /* Universal Selector */
+        *{
+            background-color: pink;
+        }
+        /* Element Selector */
+        h1{
+            color: chartreuse;
+        }
+        /* Multiple Selector */
+        h1.cyellow{
+            color: yellow;
+        }
+        /* Class Selector */
+        .cred{
+            color: red;
+        }
+        /* Important Selector */
+        .cpurple{ 
+            color: purple !important;
+        }
+        /* Attribute Selector */
+        [data-x=a]{
+            color: rgb(220, 87, 109);
+            background-color: rgb(108, 13, 108);
+        }
+        /* Id Selector */
+        #p2{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!--  Inline Style > ID selector > Class or Attribute  selector > Element Selector > Universal Selector -->
+        <h1 class="cred cyellow cpurple">CSS Specificity and Cascade</h1>
+        <p data-x="a">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque pariatur, quas eligendi ad voluptas voluptatum dolores asperiores nulla dolorem ullam obcaecati laudantium vel autem magni nesciunt assumenda eum est, sint repellendus beatae cupiditate atque aliquid velit!
+        </p>
+        <!-- Inline Selector -->
+        <h2 style="color: blueviolet;">CSS Algorithm</h2>
+        <p id="p2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dicta, eos impedit pariatur obcaecati sapiente sequi nulla dolor, distinctio repellat culpa soluta error ea facilis? Distinctio possimus ipsa dolorem asperiores repellat dicta provident accusamus ullam ex laboriosam. Voluptas ipsam mollitia repellat sequi vitae delectus veritatis nobis.
+        </p>
+    </div>
+</body>
+</html>
