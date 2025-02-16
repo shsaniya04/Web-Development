@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Specificity and Cascade</title>
     <style>
+        /* Root Element */
+        html {
+            font-size: 18px;
+        }
+
         /* Universal Selector */
         * {
             background-color: pink;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: blueviolet;
         }
 
         /* Element Selector */
@@ -41,6 +51,24 @@
         #p2 {
             color: brown;
         }
+
+        /* Descendant Selector */
+        div p {
+            background-color: wheat;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: cadetblue;
+        }
+
+        a:active {
+            background-color: black;
+        }
+
+        p:first-child {
+            color: rgb(223, 144, 26);
+        }
     </style>
 </head>
 
@@ -61,6 +89,15 @@
             dolorem asperiores repellat dicta provident accusamus ullam ex laboriosam. Voluptas ipsam mollitia repellat
             sequi vitae delectus veritatis nobis.
         </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi nesciunt provident expedita cumque qui
+            fugit earum blanditiis, nihil, cum, beatae nostrum iste. Ullam veritatis soluta est dolorum consectetur
+            quasi laborum nesciunt enim. Fuga placeat tempora eveniet vel dolor debitis minima nihil nesciunt similique,
+            adipisci exercitationem nostrum quod?
+        </p>
+        <a href="https://www.google.com">GOOGLE</a>
     </div>
 </body>
 
